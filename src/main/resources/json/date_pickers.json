@@ -1,0 +1,18 @@
+{
+  "DatePickers": [
+    {
+      "code": "futura",
+      "date": "06/15/2023",
+      "dateView": "06/15/2023",
+      "dateTime": "06/15/2023/07:00",
+      "dateTimeView": "June 15, 2023 7:00 AM"
+    },
+    {
+      "code": "pasada",
+      "date": "12/5/2019",
+      "dateView": "12/05/2019",
+      "dateTime": "12/5/2019/11:00",
+      "dateTimeView": "December 5, 2019 11:00 AM"
+    }
+  ]
+}
