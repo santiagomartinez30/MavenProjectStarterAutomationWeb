@@ -5,8 +5,6 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Open;
 
-import java.util.concurrent.TimeUnit;
-
 import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 
 public class OpenBrowser implements Task {
