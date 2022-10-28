@@ -1,25 +1,33 @@
-# Prueba Tecnica
-Proyecto maven el cual contiene tres flujos de prueba automatizados en java bajo el framework de Serenity BDD con cucumber utilizando patron de diseño ScreenPlay.
-Para la obtencion de los datos se utilizaron archivos JSON.
+# Descripción del proyecto
+Sistema de automatización de prueba (SAP) el cual verifica tres funcionalidades de la pagina de la pagina https://demoqa.com/
+
+1. Alertas
+2. Tablas de elementos
+3. Seleccion de fechas
 
 
 # Pre-requisitos 📋
 Tener instalado :
-- Maven version 3.6.3
-- Java version 11
+- [Maven](https://maven.apache.org/download.cgi) como gestor de dependencias 
+- [Java 11](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html) para una correcta ejecución del proyecto
+
+## Comenzando 🚀
+
+Para realizar la administración de este proyecto
 
 # Ejecutar casos de prueba ⚙️
-- El proyecto se encuentra configurado para ejecutarse en cualquier S.O (Windows, Linux, Mac os con procesador intel) con el navegador chrome (version 100.0.4896.127)
-  En caso de requerir ejecutar el proyecto bajo otro navegador, se debe agregar los respectivos WebDriver en la carpeta correspondiente que se encuentra dentro de **"src/test/resources/webdriver"**
-- Para ejecutar los tres flujos basta con abrir una terminal de comandos, ubicarse en la carpeta donde haya alojado el proyecto y posterior a ello ejecutar el comando :
-  
- ` mvn clean verify -Dtest=*Runner`
+ El SAP encuentra configurado para ejecutarse en cualquier S.O (Windows, Linux, Mac os con procesador intel) con el navegador de su preferencia, por defecto se ejecutarán las pruebas en el navegador **chrome**; sin embargo, podrá utilizar el navegador de su preferencia lanzando alguno de los siguientes comandos desde este archivo readme o desde una terminal de comandos:
+   
+-  **Google chrome** `mvn clean verify -Dtest=*Runner`
+-  **Mozilla firefox** `mvn clean verify -Dtest=*Runner -D"webdriver.driver"=firefox`
+-  **Microsoft edge** `mvn clean verify -Dtest=*Runner -D"webdriver.driver"=egde`
 
-- Si desea ejecutar los flujos de manera independiente lo puede realizar tambien con los siguientes comandos
 
-   - **Primer flujo**:  `mvn clean verify -Dtest=ElementsWebTablesRunner`
-   - **Segundo flujo**: `mvn clean verify -Dtest=widgetsDatePickerRunner`
-   - **Tercer flujo:** `mvn clean verify -Dtest=AlertsRunner`
+ Si desea validar las funcionalidades de manera independiente lo puede realizar también con los siguientes comandos :
+
+   - **Tablas de elementos**:  `mvn clean verify -Dtest=ElementsWebTablesRunner`
+   - **Seleccion de fechas**: `mvn clean verify -Dtest=widgetsDatePickerRunner`
+   - **Alertas:** `mvn clean verify -Dtest=AlertsRunner`
   
 
 - Otra opción puede ser ejecutar puntualmente uno o un conjunto de casos de prueba mediante el uso de tags, para ello ejecute el siguiente comando
