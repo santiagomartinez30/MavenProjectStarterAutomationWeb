@@ -13,10 +13,11 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <encoding>UTF-8</encoding>
-        <serenity.version>3.2.1</serenity.version>
-        <restassured.version>4.2.0</restassured.version>
+        <serenity.version>3.3.4</serenity.version>
+        <restassured.version>5.2.0</restassured.version>
         <lombok.version>1.18.22</lombok.version>
         <junit.version>4.12</junit.version>
+        <jackson-datatype.version>2.13.3</jackson-datatype.version>
         <parallel.tests>2</parallel.tests>
         <assertjcore.version>3.6.2</assertjcore.version>
     </properties>
@@ -56,12 +57,12 @@
         </dependency>
         <dependency>
             <groupId>net.serenity-bdd</groupId>
-            <artifactId>serenity-screenplay-webdriver</artifactId>
+            <artifactId>serenity-cucumber</artifactId>
             <version>${serenity.version}</version>
         </dependency>
         <dependency>
             <groupId>net.serenity-bdd</groupId>
-            <artifactId>serenity-cucumber</artifactId>
+            <artifactId>serenity-screenplay-webdriver</artifactId>
             <version>${serenity.version}</version>
         </dependency>
         <dependency>
@@ -76,13 +77,13 @@
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
-            <artifactId>json-schema-validator</artifactId>
+            <artifactId>json-path</artifactId>
             <version>${restassured.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>json-path</artifactId>
-            <version>${restassured.version}</version>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jdk8</artifactId>
+            <version>${jackson-datatype.version}</version>
         </dependency>
     </dependencies>
     <build>

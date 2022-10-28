@@ -13,7 +13,7 @@ Tener instalado :
   En caso de requerir ejecutar el proyecto bajo otro navegador, se debe agregar los respectivos WebDriver en la carpeta correspondiente que se encuentra dentro de **"src/test/resources/webdriver"**
 - Para ejecutar los tres flujos basta con abrir una terminal de comandos, ubicarse en la carpeta donde haya alojado el proyecto y posterior a ello ejecutar el comando :
   
-       mvn clean verify -Dtest=*Runner
+ ` mvn clean verify -Dtest=*Runner`
 
 - Si desea ejecutar los flujos de manera independiente lo puede realizar tambien con los siguientes comandos
 
